@@ -59,7 +59,7 @@ foreach ($processedArray['ar'] as $key => $value) {
     }
 }
 
-    $mixedArray = mixColumns($arcol);
+    $mixedArray = mixColumns($processedArray['ar']);
     foreach ($mixedArray as $key => $value) {
         foreach ($value as $key2 => $value2) {
             $resultArray[$key][$key2] = strToUpper(dechex($value2))." ";
